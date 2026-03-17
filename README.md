@@ -58,7 +58,6 @@ Success rate over 20 episodes per task:
 ├── scripts/
 │   ├── build_demo_preference_pairs.py   # Collect preference pairs from rollouts
 │   ├── eval_policy.py                   # Evaluate policy via GR00T inference server
-│   ├── make_linkedin_video.py           # Generate side-by-side comparison videos
 │   ├── make_eval_montage.py             # Montage of eval episodes
 │   ├── print_eval_summary.py            # Print success rate tables
 │   ├── generate_report_figures.py       # Generate paper figures
@@ -89,8 +88,6 @@ python gr00t_rlhf/algos/rwr.py --dataset_path outputs/preferences --output_dir o
 # Evaluate
 python scripts/eval_policy.py --task PnPBottleToCabinetClose_GR1ArmsAndWaistFourierHands_Env --label base
 
-# Generate comparison video
-python scripts/make_linkedin_video.py --eval_dir outputs/eval --combined
 ```
 
 ---
